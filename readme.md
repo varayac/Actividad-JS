@@ -1,105 +1,92 @@
-# Actividad Javascript
+RESPUESTAS
 
-**INSTRUCCIONES**
+Respuesta Ejercicio 1:
 
-Resuelve los siguientes ejercicios de Javascript.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+</head>
+<body>
+  <script type="text/javascript">alert("hola")</script>
+</body>
+</html>
 
-Cuando termines incluye las respuestas dentro de un readme, y luego súbelos a un repositorio en Github.
+Respuesta Ejercicio 2:
 
-## Ejercicios 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // var = a;
+    // alert(a);
+    //Da este valor: Uncaught SyntaxError: Unexpected token =
+    //Dado que no hay variable donde almacenar a, correctamente seria así:
+    var a = "a";
+    alert(a);
+  </script>
+</body>
+</html>
 
-1. Identifica por qué el archivo javascript no se carga
+Respuesta Ejercicio 3:
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3</title>
+</head>
+<body>
+  <script type="text/javascript">
+  <script>
+    var miNumero = 3 + "3";
+    console.log(miNumero);
+    //Respuesta 33 dado que agrega el valor numerico a un string
+  </script>
+  </script>
+</body>
+</html>
 
-	```html
-	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="utf-8">
-	    <title></title>
-	    <script href="javascript.js"> </script>
-	  </head>
-	  <body>
-	
-	  </body>
-	</html>
-	```
-	
-	```javascript
-	alert("hola");
-	```
+Respuesta Ejercicio 4:
 
-2. ¿Qué valor da la siguiente variable? ¿Por qué da ese valor?
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+</head>
+<body>
+  <script type="text/javascript">
+  // El error radica en que el la variable tiene un espacio y la palabra reservada "var" tiene mayuscula, correctaente seria algo asi:
+    var misVacaciones = "me faltan" + " " + 45 + "días para las vacaciones";
+    alert(misVacaciones);
+  </script>
+</body>
 
-	```html
-	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="utf-8">
-	    <title></title>
-	  </head>
-	  <body>
-	    <script>
-	     	var = a;
-        	alert(a);
-	    </script>
-	  </body>
-	</html>
-	```
-	
-2. ¿Cuál es el valor de la siguiente suma?
+Respuesta Ejercicio 5:
 
-	```html
-	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="utf-8">
-	    <title></title>
-	  </head>
-	  <body>
-	    <script>
-	     	var miNumero = 3 + "3";
-        	console.log(miNumero);
-	    </script>
-	  </body>
-	</html>
-	
-	```
-
-3. Descubre cúales eson los errores en el siguiente código:
-
-	```html
-	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="utf-8">
-	    <title></title>
-	  </head>
-	  <body>
-	    <script>
-	      Var Mis Vacaciones = "me faltan" + " " + 45 + "días para las vacaciones";
-	    </script>
-	  </body>
-	</html>
-	```
-
-4. Identifica el problema del siguiente código:
-
-	```html
-	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="utf-8">
-	    <title></title>
-	  </head>
-	  <body>
-	    <script type="text/javascript">
-	    a = prompt("ingresa un número");
-	    b = prompt("ingresa otro número");
-	    alert("la suma es " + a + b );
-	    </script>
-	  </body>
-	</html>
-	```
-	
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var a = parseInt(prompt("ingresa un número"));
+  var b = parseInt(prompt("ingresa otro número"));
+  var c = (a + b);
+  alert('la suma es ' + c );
+  </script>
+</body>
+</html>
