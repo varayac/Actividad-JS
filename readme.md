@@ -88,5 +88,5 @@ Respuesta Ejercicio 5:
   var c = (a + b);
   alert('la suma es ' + c );
   </script>
-</body>
+</body> 
 </html>
